@@ -8,7 +8,7 @@ VALUES ('M', 'Masculino');
 
 INSERT INTO tbl_sexo (sigla, descricao) VALUES ('F', 'Feminino');
 
-SELECT * FROM tbl_classificacao;
+SELECT * FROM tbl_filme;
 
 DESC tbl_classificacao;
 
@@ -67,7 +67,7 @@ VALUES (
         '2022-02-24',
         'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/93/20/20120876.jpg',
         'The Godfather',
-        '16'
+        16
     ), (
         'O REI LEÃO',
         '01:29:00',
@@ -76,7 +76,7 @@ VALUES (
         '2011-08-26',
         'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/84/28/19962110.jpg',
         'The Lion King',
-        '13'
+        13
     ), (
         'FORREST GUMP - O CONTADOR DE HISTÓRIAS',
         '02:20:00',
@@ -85,7 +85,7 @@ VALUES (
         null,
         'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/30/21/19874092.jpg',
         'Forrest Gump',
-        '16'
+        16
     ), (
         'À ESPERA DE UM MILAGRE',
         '03:09:00',
@@ -94,7 +94,7 @@ VALUES (
         null,
         'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/91/66/66/20156966.jpg',
         'The Green Mile',
-        '16'
+        16
     ), (
         'VINGADORES: ULTIMATO',
         '03:01:00',
@@ -103,7 +103,7 @@ VALUES (
         null,
         'https://br.web.img2.acsta.net/c_310_420/pictures/19/04/26/17/30/2428965.jpg',
         'Avengers: Endgame',
-        '15'
+        15
     ), (
         'BATMAN - O CAVALEIRO DAS TREVAS',
         '02:32:00',
@@ -112,11 +112,164 @@ VALUES (
         null,
         'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/86/98/32/19870786.jpg',
         'The Dark Knight',
-        '15'
+        15
     );
 
-UPDATE tbl_classificacao SET nome = 'LI';
+INSERT INTO
+    tbl_ator_diretor (
+        nome,
+        nome_artistico,
+        data_nascimento,
+        data_falescimento,
+        foto,
+        id_sexo
+    )
+VALUES (
+        'Christopher Edward Nolan',
+        NULL,
+        '1970-07-30',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/pictures/15/02/26/15/33/118611.jpg',
+        3
+    ), (
+        'Christian Charles Philip Bale',
+        NULL,
+        '1974-01-30',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/pictures/15/02/24/18/43/126776.jpg',
+        3
+    ), (
+        'Heathcliff Andrew Ledger',
+        'Heath Ledger',
+        '1979-04-04',
+        '2008-01-22',
+        'https://br.web.img2.acsta.net/c_310_420/pictures/18/08/16/19/43/2593099.jpg',
+        3
+    ), (
+        'Aaron Edward Eckhart',
+        NULL,
+        '1968-03-12',
+        NULL,
+        'https://br.web.img2.acsta.net/c_310_420/pictures/16/01/28/10/38/041658.jpg',
+        3
+    ), (
+        'Joseph Vincent Russo',
+        'Joe Russo',
+        '1971-07-08',
+        NULL,
+        'https://br.web.img2.acsta.net/c_310_420/pictures/15/11/24/17/01/231901.jpg',
+        3
+    ), (
+        'Anthony J. Russo',
+        NULL,
+        '1970-02-03',
+        NULL,
+        'https://br.web.img2.acsta.net/c_310_420/pictures/15/11/24/16/59/250993.jpg',
+        3
+    ), (
+        'Robert John Downey Jr.',
+        NULL,
+        '1965-04-04',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/pictures/18/06/29/00/35/0101925.jpg',
+        3
+    ), (
+        'Christopher Robert Evans',
+        'Chris Evans',
+        '1981-06-13',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/pictures/19/04/22/19/59/2129500.jpg',
+        3
+    ), (
+        'Mark Alan Ruffalo',
+        NULL,
+        '1967-11-22',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/pictures/19/04/22/20/02/3083743.jpg',
+        3
+    ), (
+        'Ferenc Árpád Darabont',
+        'Frank Darabont',
+        '1959-01-28',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/95/95/20122149.jpg',
+        3
+    ), (
+        'Thomas Jeffrey Hanks',
+        'Tom Hanks',
+        '1956-07-09',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/pictures/18/08/08/18/47/1167635.jpg',
+        3
+    ), (
+        'Michael Clarcke Duncan',
+        'Michael Duncan',
+        '1957-12-10',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/pictures/14/09/06/19/41/147683.jpg',
+        3
+    ), (
+        'David Bowditch Morse',
+        'David Morse',
+        '1953-10-11',
+        NULL,
+        'https://br.web.img2.acsta.net/c_310_420/pictures/15/02/25/18/50/212119.jpg',
+        3
+    ), (
+        'Robert Lee Zemeckis',
+        'Robert Zemeckis',
+        '1952-05-14',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/57/81/20030814.jpg',
+        3
+    ), (
+        'Gary Alan Sinise',
+        NULL,
+        '1955-03-17',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/92/45/36/20200745.jpg',
+        3
+    ), (
+        'Robin Virginia Gayle Wright',
+        'Robin Wright Penn',
+        '1966-04-08',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/pictures/19/11/05/01/50/2018682.jpg',
+        2
+    ), (
+        'Roger Allers',
+        NULL,
+        '1949-06-29',
+        NULL,
+        'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/91/54/06/20150846.jpg',
+        3
+    ), (
+        'Robert Ralph Minkoff',
+        'Rob Minkoff',
+        '1962-08-11',
+        NULL,
+        'https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/91/54/07/20150847.jpg',
+        3
+    ), (
+        'Garcia Júnior',
+        NULL,
+        '1967-03-02',
+        NULL,
+        'https://br.web.img2.acsta.net/c_310_420/pictures/14/01/16/13/52/556410.jpg',
+        3
+    ), (
+        'Matthew Broderick',
+        NULL,
+        '1967-03-02',
+        NULL,
+        'https://br.web.img2.acsta.net/c_310_420/pictures/14/01/16/13/52/556410.jpg',
+        3
+    ),
+UPDATE tbl_classificacao
+SET nome = 'LI';
 
 DELETE FROM tbl_classificacao;
 
 SELECT * FROM tbl_classificacao;
+
+-- https://www.adorocinema.com/filmes/melhores/
